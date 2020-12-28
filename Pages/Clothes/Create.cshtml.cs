@@ -10,7 +10,7 @@ using Proiect.Models;
 
 namespace Proiect.Pages.Clothes
 {
-    public class CreateModel : BookCategoriesPageModel
+    public class CreateModel : ClothingCategoriesPageModel
     {
         private readonly Proiect.Data.ProiectContext _context;
 

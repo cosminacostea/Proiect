@@ -11,7 +11,7 @@ using Proiect.Models;
 
 namespace Proiect.Pages.Clothes
 {
-    public class EditModel : BookCategoriesPageModel
+    public class EditModel : ClothingCategoriesPageModel
     {
         private readonly Proiect.Data.ProiectContext _context;
 

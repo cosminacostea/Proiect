@@ -7,7 +7,7 @@ using Proiect.Data;
 
 namespace Proiect.Models
 {
-    public class BookCategoriesPageModel : PageModel
+    public class ClothingCategoriesPageModel : PageModel
     {
         public List<AssignedCategoryData> AssignedCategoryDataList;
         public void PopulateAssignedCategoryData(ProiectContext context,

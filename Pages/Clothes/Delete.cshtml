@@ -37,16 +37,21 @@
             @Html.DisplayFor(model => model.Clothing.DateAdded)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Clothing.Brand)
+            @Html.DisplayNameFor(model => model.Clothing.Brand.BrandName)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Clothing.Brand)
+            @Html.DisplayFor(model => model.Clothing.Brand.BrandName)
         </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Clothing.ClothingCategories)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Clothing.ClothingCategories)
+            @{
+                foreach (var category in Model.Clothing.ClothingCategories)
+                {
+                    @category.Category.ID @: @category.Category.CategoryName <br />
+                }
+            }
         </dd>
     </dl>
     

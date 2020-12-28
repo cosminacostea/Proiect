@@ -34,9 +34,11 @@
                 <input asp-for="Clothing.DateAdded" class="form-control" />
                 <span asp-validation-for="Clothing.DateAdded" class="text-danger"></span>
             </div>
-            <label asp-for="Clothing.BrandID" class="control-label">Brand Name</label>
-            <select asp-for="Clothing.BrandID" class="form-control" asp-items="ViewBag.BrandID"></select>
-            <span asp-validation-for="Clothing.BrandID" class="textdanger"></span>
+            <div classs="form-group">
+                <label asp-for="Clothing.BrandID" class="control-label">Brand Name</label>
+                <select asp-for="Clothing.BrandID" class="form-control" asp-items="ViewBag.BrandID"></select>
+                <span asp-validation-for="Clothing.BrandID" class="textdanger"></span>
+            </div>
             <div class="form-group">
                 <div class="table">
                     <table>
